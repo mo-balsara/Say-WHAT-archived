@@ -1,0 +1,16 @@
+{
+  "name": "Say-WHAT",
+  "version": "1.0.0",
+  "description": "is a dynamic forum that is kind of like reddit, but you share your mind boggling storys on it.",
+  "main": "index.js",
+  "dependencies": {
+    "express": "^4.17.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
