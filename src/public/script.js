@@ -1,0 +1,1 @@
+fetch('https://saywhatserver.lamaqdahodwala.repl.co/get')
