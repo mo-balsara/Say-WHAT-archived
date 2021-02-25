@@ -5,3 +5,22 @@ body{
 p, h1{
   color: white;
 }
+
+button {
+  background-color: black;
+  color: white;
+  padding: 5px;
+  cursor:pointer;
+  border: 1px solid white;
+}
+button:hover{
+  background-color: dimgrey;
+  border-color: black;
+  color: white;
+  font-size: larger;
+}
+ol {
+  margin-left: 3px;
+  align-items: baseline;
+  padding: 3px;
+}
