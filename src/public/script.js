@@ -1,5 +1,5 @@
 function refresh(){
-    fetch('https://saywhatserver.lamaqdahodwala.repl.co')
-    .then(response => response.json())
+    fetch('https://saywhatserver.lamaqdahodwala.repl.co/newestposts')
+    .then(response => response.text())
     .then(data => console.log(data))
 }
