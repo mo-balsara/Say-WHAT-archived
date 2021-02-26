@@ -9,6 +9,7 @@ function createdivs(data){
 
         
     }
+    console.log('request sent')
     
 }
 
@@ -20,5 +21,15 @@ function refresh(){
 }
 
 function post(){
-    
+    unhide('postscreen')
+    hide('thingstodo')
+    hide('title')
+}
+
+function hide(element){
+    document.getElementById(element).hidden = true
+}
+
+function unhide(element){
+    document.getElementById(element).hidden = false
 }

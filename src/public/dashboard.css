@@ -24,3 +24,13 @@ ol {
   align-items: baseline;
   padding: 3px;
 }
+
+label{
+  color: white;
+}
+
+textarea{
+  background-color: rgba(255, 251, 251, 0.815);
+  color: black;
+  
+}

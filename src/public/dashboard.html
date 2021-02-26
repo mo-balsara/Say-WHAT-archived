@@ -1,23 +1,33 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Say What!</title>
-  <link href="dashboard.css" rel="stylesheet" type="text/css" />
+	<title>Say What!</title>
+	<link href="dashboard.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
-  <script src="script.js"></script>
-  <h1>Say What!</h1>
-  <p>A forum where YOU share your crazy stories!</p>
-  <ol id="thingstodo">
-    <div id='refreshcontainer'>
-        <button onclick='refresh()' id="refresh">Refresh</button>
-    </div>
-    <div id="postcontainer">
-      <button id="post" onclick='post()'>Post something</button>
-    </div>
-    <div id="postscreen">
+	<script src="script.js"></script>
+	<div id="title">
+		<h1>Say What!</h1>
+		<p>A forum where YOU share your crazy stories!</p>
+	</div>
 
-    </div>
-  </ol>
+	<ol id="thingstodo">
+		<div id='refreshcontainer'>
+				<button onclick='refresh()' id="refresh">Refresh</button>
+		</div>
+		<div id="postcontainer">
+			<button id="post" onclick='post()'>Post something</button>
+		</div>
+		
+	</ol>
+		<div id="postscreen" hidden='hidden'>
+				<textarea name="titleofstory" id="titleofstory" cols="30" rows="2" placeholder="Enter title here..."></textarea>
+				<br>
+				<textarea name="title" id="storypart" cols="100" rows="20" placeholder="Enter story here..."></textarea>
+				<br><br><br><br>
+				<button id="postit">Post it!</button>
+				<br><br>
+				<button onclick='hide("postscreen"); unhide("thingstodo"); unhide("title")'>Go back</button>
+		</div>
 </body>
 </html>
