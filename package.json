@@ -1,7 +1,7 @@
 {
   "name": "Say-WHAT",
   "version": "1.0.0",
-  "description": "is a dynamic forum that is kind of like reddit, but you share your mind boggling storys on it.",
+  "description": "is a dynamic forum that is kind of similar to reddit, but you share your mind boggling storys on it.",
   "main": "index.js",
   "dependencies": {
     "express": "^4.17.1"
@@ -10,7 +10,15 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/headiscoding/Say-WHAT-.git"
+  },
   "keywords": [],
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/headiscoding/Say-WHAT-/issues"
+  },
+  "homepage": "https://github.com/headiscoding/Say-WHAT-#readme"
 }
