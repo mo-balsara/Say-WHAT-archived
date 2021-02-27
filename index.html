@@ -1,9 +1,8 @@
 <!DOCTYPE html>
 <html>
 <head>
-<<<<<<< master
 	<title>Say What!</title>
-	<link href="dashboard.css" rel="stylesheet" type="text/css" />
+	<link href="style.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
 	<script src="script.js"></script>
@@ -14,31 +13,24 @@
 
 	<ol id="thingstodo">
 		<div id='refreshcontainer'>
-				<button onclick='refresh()' id="refresh">Refresh</button>
+				<button onclick='refresh()' id="refresh" >Refresh</button>
 		</div>
 		<div id="postcontainer">
-			<button id="post" onclick='post()'>Post something</button>
+			<button id="post" onclick='poststory()'>Post something</button>
 		</div>
 		
 	</ol>
 		<div id="postscreen" hidden='hidden'>
 				<textarea name="titleofstory" id="titleofstory" cols="30" rows="2" placeholder="Enter title here..."></textarea>
 				<br>
+                <br>
+                <textarea name="authorinp" id="authorinp" cols="30" rows="1" placeholder="Write the author of the story here..."></textarea>
+                <br><br>
 				<textarea name="title" id="storypart" cols="100" rows="20" placeholder="Enter story here..."></textarea>
 				<br><br><br><br>
-				<button id="postit">Post it!</button>
+				<button id="postit" onclick='sendtoserver()'>Post it!</button>
 				<br><br>
 				<button onclick='hide("postscreen"); unhide("thingstodo"); unhide("title")'>Go back</button>
 		</div>
-=======
-  <title>Say What!</title>
-  <link href="../views/css/dashboard.css" rel="stylesheet" type="text/css" />
-</head>
-<body>
-  <h1>Say What!</h1>
-  <p>A forum where YOU share your crazy stories!</p>
-  <input id="button" type="submit" name="button" onclick="signup();" value="Sign Up"/>
->>>>>>> master
 </body>
-  <script type="text/javascript" src="../views/js/dashboard.js"></script>
 </html>

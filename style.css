@@ -25,6 +25,10 @@ ol {
   padding: 3px;
 }
 
+button:disabled{
+    background-color: dimgrey;
+    color: grey;
+}
 label{
   color: white;
 }
