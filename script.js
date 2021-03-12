@@ -1,13 +1,13 @@
 function createdivs(data){
-    let posts = String(data)
-    posts = (posts.split(', '))
-    for (var i of posts){
+    data = data.split(',')
+    console.log(new Map(JSON.parse(JSON.stringify(Object.entries(data)))))
+    console.log(data)
+    for (var i in posts){
         if (i == 'None'){
             continue;
         }
         let div = document.createElement('div')
         console.log(i)
-
         
     }
     console.log('request sent')

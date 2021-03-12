@@ -4,6 +4,7 @@ body{
 
 p, h1{
   color: white;
+  font-family: sans-serif;
 }
 
 button {
@@ -12,12 +13,17 @@ button {
   padding: 5px;
   cursor:pointer;
   border: 1px solid white;
+
 }
+@keyframes onhover {
+  to {background-color: grey; font-size: larger;}
+}
+
+
 button:hover{
-  background-color: dimgrey;
-  border-color: black;
-  color: white;
-  font-size: larger;
+  animation: forwards;
+  animation-name: onhover;
+  animation-duration: 0.5s;
 }
 ol {
   margin-left: 3px;
@@ -25,10 +31,7 @@ ol {
   padding: 3px;
 }
 
-button:disabled{
-    background-color: dimgrey;
-    color: grey;
-}
+
 label{
   color: white;
 }
