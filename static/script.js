@@ -1,14 +1,13 @@
 function createdivs(data){
-    data = data.split(',')
-    console.log(new Map(JSON.parse(JSON.stringify(Object.entries(data)))))
-    console.log(data)
-    for (var i in posts){
-        if (i == 'None'){
-            continue;
-        }
-        let div = document.createElement('div')
-        console.log(i)
+    data = new Map(Object.entries(JSON.parse(data)))
+    for (var i of data){
+        let lnk = document.createElement('a')
+        let id = Number(i[0])
+        lnk.href = `/story/${id}`
+        let div = document.getElementById('allstories')
+        div.appendChild(lnk)
         
+
     }
     console.log('request sent')
     
