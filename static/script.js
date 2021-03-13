@@ -6,11 +6,10 @@ function createdivs(data){
         lnk.href = `/story/${id}`
         let div = document.getElementById('allstories')
         div.appendChild(lnk)
-        
 
     }
-    console.log('request sent')
-    
+    window.location.href = ('https://www.google.com')
+    console.log('function is done')
 }
 
 function sendtoserver(){
@@ -45,7 +44,7 @@ function sendtoserver(){
 }
 
 function refresh(){
-    
+
     fetch('https://saywhatserver.lamaqdahodwala.repl.co/newestposts')
     .then(response => response.text())
     .then(data => createdivs(data))
