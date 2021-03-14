@@ -3,13 +3,11 @@ function createdivs(data){
     for (var i of data){
         let lnk = document.createElement('a')
         let id = Number(i[0])
-        lnk.href = `/story/${id}`
+        lnk.href = `/read/${id}`
         let div = document.getElementById('allstories')
         div.appendChild(lnk)
-
+        
     }
-    window.location.href = ('https://www.google.com')
-    console.log('function is done')
 }
 
 function sendtoserver(){
