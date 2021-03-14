@@ -5,8 +5,8 @@ function createdivs(data){
         let id = Number(i[0])
         lnk.href = `/read/${id}`
         let div = document.getElementById('allstories')
-        div.appendChild(lnk)
-        
+        div.append(lnk)
+        alert('ok boomer')
     }
 }
 
