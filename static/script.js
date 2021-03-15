@@ -2,7 +2,7 @@ function createdivs(data){
     data = new Map(Object.entries(JSON.parse(data)))
     for (var i of data){
         let lnk = document.createElement('a')
-        let id = Number(i[0])
+        let id = String(i[0])
         lnk.href = `/read/${id}`
         lnk.innerHTML = 'joe mama'
         let div = document.getElementById('allstories')

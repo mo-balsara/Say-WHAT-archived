@@ -9,5 +9,5 @@ def home():
 
 @app.route('/read/<id>')
 def read(id):
-    pass
-app.run('127.0.0.1', port=5555)
+    return id
+app.run('0.0.0.0', port=5555)
