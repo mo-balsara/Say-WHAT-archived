@@ -7,6 +7,11 @@ p, h1{
   font-family: sans-serif;
 }
 
+textarea{
+  font-size: larger;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
 #allstories{
   position: relative;
   margin-left: 50px;

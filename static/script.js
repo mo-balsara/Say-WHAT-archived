@@ -1,11 +1,12 @@
 function createdivs(data){
+    let div = document.getElementById('allstories')
+    div.innerHTML = ''
     data = new Map(Object.entries(JSON.parse(data)))
     for (var i of data){
         let lnk = document.createElement('a')
         let id = String(i[0])
         lnk.href = `/read/${id}`
-        lnk.innerHTML = 'joe mama'
-        let div = document.getElementById('allstories')
+        lnk.innerHTML = "Read me!"
         div.append(lnk)
     }
 }
