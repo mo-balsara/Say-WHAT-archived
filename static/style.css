@@ -7,18 +7,6 @@ p, h1{
   font-family: sans-serif;
 }
 
-a{
-  color: white;
-}
-
-@keyframes animation33{
-  to{background-color: white;
-    color: black;
-  }
-}
-a:hover{
-  animation: forwards animation33 1s;
-}
 
 
 textarea{

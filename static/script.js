@@ -6,7 +6,9 @@ function createdivs(data){
         let lnk = document.createElement('a')
         let id = String(i[0])
         lnk.href = `/read/${id}`
-        lnk.innerHTML = "Read me!"
+        btn = document.createElement('button')
+        btn.innerHTML = 'Read me!'
+        lnk.appendChild(btn)
         div.append(lnk)
     }
 }
