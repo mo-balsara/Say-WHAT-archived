@@ -7,9 +7,25 @@ p, h1{
   font-family: sans-serif;
 }
 
+a{
+  color: white;
+}
+
+@keyframes animation33{
+  to{background-color: white;
+    color: black;
+  }
+}
+a:hover{
+  animation: forwards animation33 1s;
+}
+
+
 textarea{
   font-size: larger;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
+  overflow-y: scroll;
+
 }
 
 #allstories{
