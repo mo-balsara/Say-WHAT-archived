@@ -5,33 +5,35 @@
 	<link href="static/style.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
-	<script src="static/script.js"></script>
-	<div id="title">
-		<h1>Say What!</h1>
-		<p>A forum where YOU share your crazy stories!</p>
-	</div>
-	<ol id="thingstodo">
-		<div id='refreshcontainer'>
-				<button onclick='refresh()' id="refresh" >Refresh</button>
+	<main>
+		<script src="static/script.js"></script>
+		<div id="title">
+			<h1>Say What!</h1>
+			<p>A forum where YOU share your crazy stories!</p>
 		</div>
-		<div id="postcontainer">
-			<button id="post" onclick='poststory()'>Post something</button>
-		</div>
-	</ol>
-	<div id="allstories">
+		<ol id="thingstodo">
+			<div id='refreshcontainer'>
+					<button onclick='refresh()' id="refresh" >Refresh</button>
+			</div>
+			<div id="postcontainer">
+				<button id="post" onclick='poststory()'>Post something</button>
+			</div>
+		</ol>
+		<div id="allstories">
 
-	</div>
-		<div id="postscreen" hidden='hidden'>
-				<textarea name="titleofstory" id="titleofstory" cols="30" rows="2" placeholder="Enter title here..."></textarea>
-				<br>
-                <br>
-                <textarea name="authorinp" id="authorinp" cols="30" rows="1" placeholder="Write the author of the story here..."></textarea>
-                <br><br>
-				<textarea name="title" id="storypart" cols="100" rows="20" placeholder="Enter story here..."></textarea>
-				<br><br><br><br>
-				<button id="postit" onclick='sendtoserver()'>Post it!</button>
-				<br><br>
-				<button onclick='hide("postscreen"); unhide("thingstodo"); unhide("title")'>Go back</button>
 		</div>
+			<div id="postscreen" hidden='hidden'>
+					<textarea name="titleofstory" id="titleofstory" cols="30" rows="2" placeholder="Enter title here..."></textarea>
+					<br>
+					<br>
+					<textarea name="authorinp" id="authorinp" cols="30" rows="1" placeholder="Write the author of the story here..."></textarea>
+					<br><br>
+					<textarea name="title" id="storypart" cols="100" rows="20" placeholder="Enter story here..."></textarea>
+					<br><br><br><br>
+					<button id="postit" onclick='sendtoserver()'>Post it!</button>
+					<br><br>
+					<button onclick='hide("postscreen"); unhide("thingstodo"); unhide("title")'>Go back</button>
+			</div>
+		</main>
 </body>
 </html>

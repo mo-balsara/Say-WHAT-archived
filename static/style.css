@@ -1,7 +1,8 @@
 body{
   background-color: rgb(70, 70, 70);
+  margin: 0;
+  padding: 0;
 }
-
 p, h1{
   color: white;
   font-family: sans-serif;
@@ -15,6 +16,7 @@ textarea{
   overflow-y: scroll;
 
 }
+
 
 #allstories{
   position: relative;
